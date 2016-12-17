@@ -120,7 +120,7 @@ gulp.task('watch', function() {
  */
 gulp.task('test', function (done) {
     new server({
-        configFile: require('path').resolve('karma.conf.js'),
+        configFile: require('path').join(__dirname, 'karma.conf.js'),
         singleRun: true
     }, done).start();
 });
